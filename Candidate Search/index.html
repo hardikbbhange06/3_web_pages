@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Candidate Search</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+
+    <!--  -->
+    <div>
+      <header>
+        <div class="navigation">
+          <div class="logo">
+            <div><img src="./Sumo.jpg" alt="Company Logo" /></div>
+            <div><h1>Recruitment Solution</h1></div>
+          </div>
+          <ul>
+            <li class="list active">
+              <a href="/">
+                <span class="icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#Search">
+                <span class="icon">
+                  <ion-icon name="search"></ion-icon>
+                </span>
+                <span class="text">Search</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="#Profile">
+                <span class="icon">
+                  <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="text">Profile</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="#Settings">
+                <span class="icon">
+                  <ion-icon name="settings-outline"></ion-icon>
+                </span>
+                <span class="text">Settings</span>
+              </a>
+            </li>
+            <div class="indicator"></div>
+          </ul>
+        </div>
+      </header>
+      <br />
+
+      <!-- Search section -->
+      <div>
+        <section id="#Search" class="features">
+          <h2>Find Candidates</h2>
+          <form action="action_page.php">
+            <label for="location">Location</label>
+
+            <input type="text" id="location" required />
+            <label for="job-role">Job Role</label>
+            <input type="text" id="job-role" required />
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
+      </div>
+      <br />
+      <div>
+        <!-- Candidate results section -->
+        <section class="candidate-list">
+          <h2>Search Results</h2>
+          <ul></ul>
+        </section>
+      </div>
+      <div>
+        <!-- Filter and sort section -->
+        <section class="filter-sort">
+          <h3>Filters</h3>
+          <!-- Add filter options here if needed -->
+
+          <h3>Sort By</h3>
+          <select name="sort-by">
+            <option value="name">Name</option>
+            <option value="location">Location</option>
+            <option value="experience">Experience</option>
+          </select>
+        </section>
+      </div>
+      <div></div>
+      <!-- Search section -->
+      <div>
+        <section id="#Profile" class="features"></section>
+      </div>
+      <!-- Search section -->
+      <div>
+        <section id="#Settings" class="features"></section>
+      </div>
+
+      <div>
+        <footer>
+
+            <div>
+              <div class="wrapper">
+    
+                <div class="button">
+                   <div class="icon">
+                      <i class="fab fa-facebook-f"></i>
+                   </div>
+                   <span>Facebook</span>
+                </div>
+                
+                <div class="button">
+                   <div class="icon">
+                      <i class="fab fa-twitter"></i>
+                   </div>
+                   <span>Twitter</span>
+                </div>
+            
+                <div class="button">
+                   <div class="icon"><a href="/" target="_blank">
+                      <i class="fab fa-instagram" ></i>
+                   </div>
+                   <span>Instagram</span></a>
+                </div>
+                
+                <div class="button">
+                   <div class="icon"><a href="/" target="_blank">
+            
+                    <i class="fab fa-codepen"></i>
+                   </div>
+                   <span>Codepen</span></a>
+                </div> 
+            
+                <div class="button">
+                   <div class="icon"><a href="/" target="_blank">
+            
+                      <i class="fab fa-youtube"></i>
+                   </div>
+                   <span>YouTube</span></a>
+                </div>
+            </div>
+            <!-- Footer content -->
+            <p>&copy; 2023 Recruitment Solution. All rights reserved.</p>
+          </footer>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
